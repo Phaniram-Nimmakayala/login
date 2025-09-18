@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(253, 93, 0), rgb(250, 185, 5));
+}
+
+.main {
+    width: 300px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px grey;
+    background-color: white;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 80%;
+    transition: all 0.4s ease;
+}
+
+.input:hover {
+    border: 1px solid orange;
+    box-shadow: 0px 0px 10px orange;
+}
+
+.input::placeholder {
+    transition: all 0.4s ease;
+}
+
+.input:hover::placeholder {
+    color: orange;
+}
+
+button {
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: orange;
+    color: white;
+    box-shadow: 0px 0px 20px orange;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    border: 2px solid orange;
+    background-color: transparent;
+    color: orange;
+    box-shadow: none;
+    transform: scale(0.9);
+}
+
+
+.a1 {
+    text-decoration: none;
+    color: orange;
+}
+
+.checkbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+input[type="checkbox"] {
+    accent-color: orange;
+}
+
+.a2 {
+    text-decoration: none;
+    color: orange;
+}
+
+@media (max-width: 700px) {
+    .main {
+        width: 80%;
+    }
+}
